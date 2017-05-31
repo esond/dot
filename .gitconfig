@@ -1,0 +1,40 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = Eric Sondergard
+	EMAIL
+[user]
+[credential]
+[rerere]
+	enabled = true
+[alias]
+	co = checkout
+ 	cm = commit
+ 	cam = commit -am
+ 	cmm = commit -m
+	st = status
+	br = branch
+	brr = branch -r
+	ps = push -v
+	pl = pull -v
+	psf = push -vf
+	rpo = remote prune origin
+	oops = reset HEAD~1
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	stats1 = shortlog -sn --since='1 week'
+	stats2 = shortlog -sn --since='2 weeks'
+	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+	overview = log --oneline --no-merges
+	overview-all = log --all --oneline --no-merges
+	recap = log --all --oneline --no-merges --author=EMAIL
+	today = log --since=00:00:00 --all --no-merges --oneline --author=EMAIL
+	graph = log --graph --all --decorate --stat --date=iso
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
