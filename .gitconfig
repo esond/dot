@@ -5,7 +5,7 @@
 	process = git-lfs filter-process
 [user]
 	name = Eric Sondergard
-	EMAIL
+	email = flamtap@users.noreply.github.com
 [user]
 [credential]
 [rerere]
@@ -16,13 +16,13 @@
  	cam = commit -am
  	cmm = commit -m
 	st = status
-	br = branch
-	brr = branch -r
-	ps = push -v
+	br = branch -v
+	brr = branch -rv
+	ps = push
 	pl = pull -v
-	psf = push -vf
+	psf = push -f
 	rpo = remote prune origin
-	oops = reset HEAD~1
+	oops = reset --soft HEAD~1
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
@@ -31,8 +31,8 @@
 	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 	overview = log --oneline --no-merges
 	overview-all = log --all --oneline --no-merges
-	recap = log --all --oneline --no-merges --author=EMAIL
-	today = log --since=00:00:00 --all --no-merges --oneline --author=EMAIL
+	recap = log --all --oneline --no-merges --author=flamtap@users.noreply.github.com
+	today = log --since=00:00:00 --all --no-merges --oneline --author=flamtap@users.noreply.github.com
 	graph = log --graph --all --decorate --stat --date=iso
 [pull]
 	rebase = true
