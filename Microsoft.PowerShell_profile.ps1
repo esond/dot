@@ -14,12 +14,6 @@ function SublimeText { & 'C:\Program Files\Sublime Text 3\sublime_text.exe' }
 Set-Alias -Name sublime -Value SublimeText
 
 # Git aliases
-function GitPull { git pull -v }
-Set-Alias -Name gpl -Value GitPull
-
-function GitPush { git push }
-Set-Alias -Name gpu -Value GitPush
-
 function GitStatus { git status }
 Set-Alias -Name gs -Value GitStatus
 
@@ -40,6 +34,9 @@ Set-Alias -Name gaa -Value GitAddAll
 
 function GitCommit($message) { git commit -m "$message" }
 Set-Alias -Name gco -Value GitCommit
+
+function GitAddAllCommit($message) { git add .; git commit -m "$message" }
+Set-Alias -Name gac -Value GitAddAllCommit
 
 function GitNuke {
     git reset --hard
