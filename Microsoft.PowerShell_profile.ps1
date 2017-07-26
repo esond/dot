@@ -2,6 +2,17 @@ Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-a4faccd\src\posh-git.psd1'
 Set-Location C:\
 Set-PSReadlineOption -BellStyle None
 
+# Chocolatey profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
+
+# Aliases
+function SublimeText { & 'C:\Program Files\Sublime Text 3\sublime_text.exe' }
+Set-Alias -Name sublime -Value SublimeText
+
 # Git aliases
 function GitPull { git pull -v }
 Set-Alias -Name gpl -Value GitPull
