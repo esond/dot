@@ -6,7 +6,6 @@
 [user]
 	name = Eric Sondergard
 	email = flamtap@users.noreply.github.com
-[user]
 [credential]
 [rerere]
 	enabled = true
@@ -20,6 +19,7 @@
 	brr = branch -rv
 	ps = push
 	psf = push -f
+	psu = push -u origin
 	pl = pull -v
 	ftc = fetch -v
 	difc = diff --cached
