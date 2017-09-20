@@ -24,6 +24,7 @@
 	ftc = fetch -v
 	difc = diff --cached
 	rpo = remote prune origin
+	rbc = rebase --continue
 	oops = reset --soft HEAD~1
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t
