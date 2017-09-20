@@ -17,6 +17,8 @@
 	st = status
 	br = branch -v
 	brr = branch -rv
+	brd = branch -d
+	brD = branch -D
 	ps = push
 	psf = push -f
 	psu = push -u origin
