@@ -1,4 +1,5 @@
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-a4faccd\src\posh-git.psd1'
+
 Set-Location C:\
 Set-PSReadlineOption -BellStyle None
 
@@ -8,7 +9,6 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-
 # Aliases
 function SublimeText { & 'C:\Program Files\Sublime Text 3\sublime_text.exe' }
 Set-Alias -Name sublime -Value SublimeText
@@ -16,9 +16,6 @@ Set-Alias -Name sublime -Value SublimeText
 # Git aliases
 function GitStatus { git status }
 Set-Alias -Name gs -Value GitStatus
-
-function GitCheckout($branchName) { git checkout $branchName }
-Set-Alias -Name go -Value GitCheckout
 
 function GitBranch { git branch -v }
 Set-Alias -Name gb -Value GitBranch
@@ -32,8 +29,8 @@ Set-Alias -Name gd -Value GitDiff
 function GitAddAll { git add .}
 Set-Alias -Name gaa -Value GitAddAll
 
-function GitCommit($message) { git commit -m "$message" }
-Set-Alias -Name gco -Value GitCommit
+function GitAddAllCommit($message) { git add .; git commit -m "$message" }
+Set-Alias -Name gac -Value GitAddAllCommit
 
 function GitAddAllCommit($message) { git add .; git commit -m "$message" }
 Set-Alias -Name gac -Value GitAddAllCommit
