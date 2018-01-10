@@ -5,7 +5,7 @@
 	process = git-lfs filter-process
 [user]
 	name = Eric Sondergard
-	email = flamtap@users.noreply.github.com
+	email = 4650644+Flamtap@users.noreply.github.com
 [credential]
 [rerere]
 	enabled = true
@@ -36,8 +36,8 @@
 	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 	overview = log --oneline --no-merges
 	overview-all = log --all --oneline --no-merges
-	recap = log --all --oneline --no-merges --author=flamtap@users.noreply.github.com
-	today = log --since=00:00:00 --all --no-merges --oneline --author=flamtap@users.noreply.github.com
+	recap = log --all --oneline --no-merges --author=4650644+Flamtap@users.noreply.github.com
+	today = log --since=00:00:00 --all --no-merges --oneline --author=4650644+Flamtap@users.noreply.github.com
 	graph = log --graph --all --decorate --stat --date=iso
 [pull]
 	rebase = true
