@@ -1,0 +1,22 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+
+    // Editor settings
+    "editor.find.autoFindInSelection": true,
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [120],
+
+    // Language-specific settings
+    "[markdown]": {
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[plaintext]": {
+        "editor.rulers": [
+            80
+        ]
+    },
+    "workbench.colorTheme": "Monokai Dimmed",
+}
