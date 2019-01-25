@@ -32,9 +32,6 @@ Set-Alias -Name gaa -Value GitAddAll
 function GitAddAllCommit($message) { git add .; git commit -m "$message" }
 Set-Alias -Name gac -Value GitAddAllCommit
 
-function GitAddAllCommit($message) { git add .; git commit -m "$message" }
-Set-Alias -Name gac -Value GitAddAllCommit
-
 function GitNuke {
     git reset --hard
     git clean -f -d
