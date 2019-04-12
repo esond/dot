@@ -9,10 +9,6 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-# Aliases
-function SublimeText { & 'C:\Program Files\Sublime Text 3\sublime_text.exe' }
-Set-Alias -Name sublime -Value SublimeText
-
 # Git aliases
 function GitStatus { git status }
 Set-Alias -Name gs -Value GitStatus
