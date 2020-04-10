@@ -1,11 +1,10 @@
-
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 
     "profiles":
     {
@@ -21,7 +20,8 @@
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
                 "hidden": false,
-                "colorScheme": "VSCode"
+                "colorScheme": "VSCode",
+                "fontSize": 11
             },
             {
                 // Make changes here to the cmd.exe profile
@@ -35,6 +35,15 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore",
+                "fontFace":  "Cascadia Code PL",
+                "colorScheme": "VSCode",
+                "fontSize": 11
             }
         ]
     },
