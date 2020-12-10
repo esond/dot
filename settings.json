@@ -1,22 +1,27 @@
 {
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
 
     // Editor settings
-    "editor.find.autoFindInSelection": true,
     "editor.mouseWheelZoom": true,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "all",
     "editor.rulers": [120],
+
+    "files.associations": {
+        "*.json": "jsonc"
+    },
 
     // Language-specific settings
     "[markdown]": {
         "editor.rulers": [
             80
-        ]
+        ],
+        "editor.tabSize": 2
     },
     "[plaintext]": {
         "editor.rulers": [
             80
         ]
     },
-    "workbench.colorTheme": "Monokai Dimmed",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
