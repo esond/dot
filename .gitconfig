@@ -6,24 +6,41 @@
 [user]
 	name = Eric Sondergard
 	email = 4650644+esond@users.noreply.github.com
+[pull]
+	rebase = true
+	prune = true
+[rebase]
+	autoStash = true
+[fetch]
+	prune = true
+[core]
+	autocrlf = true
+	editor = code --wait
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	tool = vscode
+[merge.tool "vscode"]
+	cmd = code --wait --diff $MERGED $LOCAL $REMOTE
 [credential]
 [rerere]
 	enabled = true
 [alias]
 	co = checkout
- 	cm = commit
- 	cam = commit -am
- 	cmm = commit -m
+	cm = commit
+	cmm = commit -m
+	cma = commit --amend -m
 	st = status
+	sw = switch
+	rs = restore
 	br = branch -v
 	brr = branch -rv
-	brd = branch -d
-	brD = branch -D
 	ps = push
 	psf = push -f
 	psu = push -u origin
 	pl = pull -v
-	ftc = fetch -v
 	difc = diff --cached
 	rpo = remote prune origin
 	rbc = rebase --continue
@@ -39,8 +56,3 @@
 	recap = log --all --oneline --no-merges --author=4650644+esond@users.noreply.github.com
 	today = log --since=00:00:00 --all --no-merges --oneline --author=4650644+esond@users.noreply.github.com
 	graph = log --graph --all --decorate --stat --date=iso
-[pull]
-	rebase = true
-[rebase]
-	autoStash = true
-
